@@ -21,16 +21,16 @@
 
     <div class="game-area">
         <div class="controls-area">
-            <button class="btn btn--big btn--green">
+            <button data-value="a" class="btn answer-button btn--big btn--green">
                 <i class="fas fa-a"></i>
             </button>
-            <button class="btn btn--big btn--blue">
+            <button data-value="b" class="btn answer-button btn--big btn--blue">
                 <i class="fas fa-b"></i>
             </button>
-            <button class="btn btn--big btn--orange">
+            <button data-value="c" class="btn answer-button btn--big btn--orange">
                 <i class="fas fa-c"></i>
             </button>
-            <button class="btn btn--big btn--purple">
+            <button data-value="d" class="btn answer-button btn--big btn--purple">
                 <i class="fas fa-d"></i>
             </button>
         </div>
@@ -40,10 +40,11 @@
             <span id="option-b">b</span>
             <span id="option-c">c</span>
             <span id="option-d">d</span>
-            <p class="answer-message">Enter Answer:</p>
+            <!-- <p class="answer-message">Enter Answer:</p>
             <input id="answer-box" type="radio">
-                <label for="answer-box">A</label>
-            <button data-type="submit" class="btn btn--gray">Submit Answer</button>
+                <label for="answer-box">A</label> -->
+            <button type="button" id="next-button" class="btn btn-next">Next</button>
+            <button type="submit" class="btn btn--gray">Submit Answer</button>
         </div>
     </div>
     <div class="score-area">

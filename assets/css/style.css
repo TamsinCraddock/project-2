@@ -9,6 +9,10 @@ body {
 
 /* --------- Heading */
 
+.question-area{
+    color: white
+}
+
 .heading {
     text-align: center;
     font-size: 2.5rem;
@@ -25,7 +29,7 @@ body {
     background-color: #334d5c;
     box-sizing: border-box;
     width: 85%;
-    height: 65vh;
+    /* height: 65vh; */
     max-height: 450px;
     max-width: 830px;
     margin-left: auto;
@@ -93,6 +97,7 @@ body {
     text-transform: uppercase;
     letter-spacing: 1.2px;
     color: white;
+    cursor: pointer
 }
 
 .btn:focus {
@@ -166,6 +171,13 @@ body {
 .btn--gray {
     margin-top: 25px;
     background-color: #445361;
+    border: 1px transparent;
+    border-radius: 20px;
+}
+
+.btn-next {
+    margin-top: 25px;
+    background-color: pink;
     border: 1px transparent;
     border-radius: 20px;
 }
