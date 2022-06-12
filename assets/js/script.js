@@ -1,11 +1,13 @@
 const answers = ["a","b","c","d"]
 const questions = [
     {
-        question: 'what is answer 1',
+        question: 'What is the captial of France',
+        options: ["Johannesburg", "London", "Paris", "Berlin"],
         answer: 0
     },
     {
         question: 'what is answer 2',
+        options: ["one", "two", "three", "Four"],
         answer: 2
     },
     {
@@ -21,6 +23,7 @@ const gameState = {
     currentQuestion: 0,
     currentScore: 0,
     questionOutput : null,
+    options:[]
 }
 
 
@@ -30,6 +33,7 @@ const gameState = {
 document.addEventListener("DOMContentLoaded", function(){
     console.log("loaded");
     const buttons = document.getElementsByClassName("answer-button");
+    gameState.options = document.getElementsByClassName("option");
     gameState.questionOutput = document.getElementById("question");
     const nextButton = document.getElementById("next-button");
 
@@ -44,6 +48,7 @@ document.addEventListener("DOMContentLoaded", function(){
         button.addEventListener("click", function(){
             const answer = this.getAttribute("data-value");
             alert(`You clicked ${answer}`);
+            checkAnswer(this);
         })
     }
     runGame()
@@ -53,15 +58,12 @@ function runGame() {
     displayQuestion();
 }
 
+// TODO
 function checkAnswer() {
 
 }
 
-function calculateCorrectAnswer() {
-
-}
-
-function incermentScore() {
+function incrementScore() {
 
 }
 
@@ -70,7 +72,11 @@ function incrementWrongAnswer() {
 }
 
 function displayQuestion() {
-    console.log("setting question");
-    gameState.questionOutput.textContent = questions[gameState.currentQuestion].question
+    const currentQuestion = questions[gameState.currentQuestion];
+    gameState.questionOutput.textContent = currentQuestion.question;
+    console.log(gameState.options)
+    for(let i = 0; i < gameState.options.length; i++) {
+        gameState.options[i].textContent = `${answers[i]}: ${currentQuestion.options[i]}`
+    }
 
 }
