@@ -1,21 +1,33 @@
 const answers = ["a","b","c","d"]
 const questions = [
-    {
-        question: 'What is the captial of France',
-        options: ["Johannesburg", "London", "Paris", "Berlin"],
-        answer: 0
-    },
-    {
-        question: 'what is answer 2',
-        options: ["one", "two", "three", "Four"],
-        answer: 2
-    },
-    {
-        question: 'what is answer 3',
+    { //Q1
+        question: 'Which five colours make up the Olympic rings?',
+        options: ["White, blue, green, yellow and red","Black, green, blue, yellow and red","Black, green, blue, orange and red","Black, gold, blue, yellow and red"],
         answer: 1
     },
-    {
-        question: 'what is answer 4',
+    { //Q2
+        question: 'Which country is brie cheese originally from?',
+        options: ["Switzerland","Portugal","Italy","France"],
+        answer: 3
+    },
+    { //Q3
+        question: 'How many time zones are there in Russia?',
+        options: ["11","12","13","14"],
+        answer: 0
+    },
+    { //Q4
+        question: "What is the name of Bridget Jones' baby in the third Bridget Jones film?",
+        options: ["Duke","Harry","William","Henry"],
+        answer: 2
+    },
+    { //Q5
+        question: 'How many elements are there in the periodic table?',
+        options: ["110","115","118","121"],
+        answer: 2
+    },
+    { //Q6
+        question: 'What does the AC button on a calculator stand for?',
+        options: ["All clear","Adjacent clear","Air conditioning","All clean"],
         answer: 0
     }
 ];
