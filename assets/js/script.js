@@ -79,8 +79,6 @@ document.addEventListener("DOMContentLoaded", function(){
                 statusElement.appendChild(createAnswerStatus(false))
             }
             toggleButtons(buttons, true);
-            console.log(gameState.currentQuestion)
-            console.log(questions.length)
             if(gameState.currentQuestion >= questions.length - 1) {
                 nextButton.textContent = "Finish";
             }
