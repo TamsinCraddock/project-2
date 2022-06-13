@@ -20,29 +20,42 @@
     </h1>
 
     <div class="game-area">
-        <div class="controls-area">
-            <button data-value="a" class="btn answer-button btn--big btn--green">
-                <i class="fas fa-a"></i>
-            </button>
-            <button data-value="b" class="btn answer-button btn--big btn--blue">
-                <i class="fas fa-b"></i>
-            </button>
-            <button data-value="c" class="btn answer-button btn--big btn--orange">
-                <i class="fas fa-c"></i>
-            </button>
-            <button data-value="d" class="btn answer-button btn--big btn--purple">
-                <i class="fas fa-d"></i>
-            </button>
-        </div>
+        
         <div class="question-area">
+            <!-- Question -->
             <p id="question">q</p>
-            <p class="option" id="option-a">a</p>
-            <p class="option" id="option-b">b</p>
-            <p class="option" id="option-c">c</p>
-            <p class="option" id="option-d">d</p>
-            <!-- <p class="answer-message">Enter Answer:</p>
-            <input id="answer-box" type="radio">
-                <label for="answer-box">A</label> -->
+            <!-- A -->
+            <div class="option-holder">
+                <span class="status"></span>
+                <p class="option" id="option-a">a</p>
+                <button data-value="a" class="btn answer-button btn--big btn--green">
+                    <i class="fas fa-a"></i>
+                </button>
+            </div>
+            <!-- B -->
+            <div class="option-holder">
+                <span class="status"></span>
+                <p class="option" id="option-b">b</p>
+                <button data-value="b" class="btn answer-button btn--big btn--blue">
+                    <i class="fas fa-b"></i>
+                </button>
+            </div>
+            <!-- C -->
+            <div class="option-holder">
+                <span class="status"></span>
+                <p class="option" id="option-c">c</p>
+                <button data-value="c" class="btn answer-button btn--big btn--orange">
+                    <i class="fas fa-c"></i>
+                </button>
+            </div>  
+            <!-- D -->
+            <div class="option-holder">
+                <span class="status"></span>
+                <p class="option" id="option-d">d</p>
+                <button data-value="d" class="btn answer-button btn--big btn--purple">
+                    <i class="fas fa-d"></i>
+                </button>
+            </div>
             <button type="button" id="next-button" class="btn btn-next">Next</button>
         </div>
     </div>

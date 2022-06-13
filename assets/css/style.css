@@ -38,10 +38,23 @@ body {
 }
 
 .question-area {
-    width: 50%;
     font-size: 2rem;
     margin: auto;
     padding: 50px 0;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.option-holder {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    padding-top: 2rem;
+}
+
+.option {
+    font-size: 1.5rem;
+    padding-top: 1rem;
 }
 
 .question-area span {
@@ -98,6 +111,18 @@ body {
     letter-spacing: 1.2px;
     color: white;
     cursor: pointer
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+.btn:disabled {
+    cursor: not-allowed;
 }
 
 .btn:focus {
