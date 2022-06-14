@@ -202,9 +202,11 @@ body {
 
 .btn-next {
     margin-top: 25px;
-    background-color: pink;
+    background-color: rgb(255, 255, 255);
+    color: #334d5c;
     border: 1px transparent;
     border-radius: 20px;
+    font-size: 24px;
 }
 
 .btn--gray:active,
