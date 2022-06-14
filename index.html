@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Quiz Me</title>
 
+
+
     <!-- Google Fonts & Font Awesome -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,15 +18,22 @@
     
 </head>
 <body>
-    <h1 class="heading">
-        <img class="logo" src="assets/images/quiz-me-logo-1.png" alt="logo">Quiz Me
-    </h1>
-
+    <header>
+        <section> 
+            <h1 class="heading sr-only">
+                Quiz Me
+            </h1>  
+            <img class="logo" src="assets/images/quiz-me-logo-1.png" alt="Quiz Me">
+        </section>
+        <span id="open-help"><i class="fas fa-question-circle" aria-hidden="true"></i></span>  
+    </header>
+   
     <div class="game-area">
         
         <div class="question-area">
             <!-- Question -->
-            <p id="question">q</p>
+            <p id="question-progress"></p>
+            <p id="question"></p>
             <!-- A -->
             <div class="option-holder">
                 <span class="status"></span>
@@ -64,6 +73,13 @@
         <p class="scores">Correct Answers <span id="score">0</span></p>
         <p class="scores">Incorrect Answers <span id="incorrect">0</span></p>
     </div>
+    <section id="help-area">
+        <h2>How to play</h2>
+        <span id="close-help"><i class="fas fa-times" aria-hidden="true"></i></span>
+        <p>do some stuff</p>
+
+        <p>more things</p>
+    </section>
 
     <script src="assets/js/script.js"></script>
 </body>
