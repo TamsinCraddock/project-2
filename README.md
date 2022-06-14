@@ -2,14 +2,8 @@
 
 Quiz Me is a general knowledge quiz website designed for users to put their knowlege to the test. Each day a new set of questions will be released. Users will be able to share their score with friends and family. There will also be a running score page with the top 100 players listed within the last 30 days.
 
-////
+The live link can be found here: [Quiz Me](https://tamsincraddock.github.io/project-2/)
 
-We provide the following services:
-- Dog Walking
-- House Sitting
-- Cat Visits
-
-![Dogs walking in pack](assets/images/hero-image.jpg)
 
 
 ## Existing Features:

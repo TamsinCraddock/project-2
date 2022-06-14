@@ -37,6 +37,7 @@ const gameState = {
     wrongAnswers: 0,
     questionOutput : null,
     questionProgress : null,
+    started: false,
     scoreElements : {
         score: null,
         incorrect: null
@@ -60,8 +61,9 @@ document.addEventListener("DOMContentLoaded", function(){
     const openHelpButton = document.getElementById("open-help");
     const helpArea = document.getElementById("help-area");
     const closeHelpButton = document.getElementById("close-help");
+    const welcomeArea = document.getElementById("welcome-area");
+    const questionArea = document.getElementById("question-area");
 
-    nextButton.disabled = true;
     openHelpButton.addEventListener("click", function () {
         helpArea.style.display = "block";
         document.body.style.overflow = "hidden";
@@ -72,7 +74,16 @@ document.addEventListener("DOMContentLoaded", function(){
         document.body.style.overflow = "inherit"
     });
 
-    nextButton.addEventListener("click", function(){
+    nextButton.addEventListener("click", function() {
+        
+        if(!gameState.started) {
+            questionArea.style.display = "flex";
+            welcomeArea.style.display = "none";
+            this.textContent = "Next";
+            gameState.started = true;
+            return;
+        }
+
         if(gameState.currentQuestion >= questions.length - 1) {
             setEndGameMessage();
             this.style.display = "none";

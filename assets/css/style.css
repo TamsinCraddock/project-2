@@ -9,8 +9,13 @@ body {
 
 /* --------- Heading */
 
-.question-area{
-    color: white
+#question-area{
+    color: white;
+    display: none;
+    font-size: 2rem;
+    margin: auto;
+    padding: 50px 0;
+    flex-flow: column wrap;
 }
 
 .heading {
@@ -38,14 +43,6 @@ body {
     padding: 1%;
 }
 
-.question-area {
-    font-size: 2rem;
-    margin: auto;
-    padding: 50px 0;
-    display: flex;
-    flex-flow: column wrap;
-}
-
 .option-holder {
     display: flex;
     flex-direction: row-reverse;
@@ -58,7 +55,7 @@ body {
     padding-top: 1rem;
 }
 
-.question-area span {
+#question-area span {
     padding: 0 15px;
 }
 
@@ -242,6 +239,10 @@ header {
     column-gap: 2rem;
 }
 
+#welcome-area {
+    color: white;
+}
+
 /* --------- Media queries */
 
 @media (max-width: 414px) {
@@ -263,12 +264,12 @@ header {
         left: -0.7rem;
     }
 
-    .question-area {
+    #question-area {
         padding: 10% 0;
         width: 100%;
     }
 
-    .question-area span {
+    #question-area span {
         padding: 0;
     }
 
@@ -312,7 +313,7 @@ header {
     .btn--big {
         margin: 10px 10px;
     }
-    .question-area {
+    #question-area {
         padding: 10px 0;
     }
 
