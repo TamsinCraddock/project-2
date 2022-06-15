@@ -9,75 +9,41 @@ The live link can be found here: [Quiz Me](https://tamsincraddock.github.io/proj
 ## Existing Features:
 ---
 
-### Welcome pop-up page:
+## Welcome pop-up page:
 -  This is a landing page to welcome the user to the website. The welcome page will also serve the purpose of giving the user an overview of how to use the application.
 
 ![Quiz Me welcome page](assets/images/quiz-me-welcome-page.png)
 
-- Question game play area: This is the section of the game. Each question will be displayed here one at a time and the user will need to select an answer (either option A, B, C or D) before they are able to click the 'next' button to move on to the next question.
+## Question game play area:
+- This is the section of the game. Each question will be displayed here one at a time and the user will need to select an answer (either option A, B, C or D) before they are able to click the 'next' button to move on to the next question.
 
-- Question mark (help) button: This button is displayed at the top right hand side of the page and will be a tool that the user could use throughout the game as a reminder about the game rules and 'how to play'.
+![Quiz Me game play area](assets/images/quiz-me-game-play-area.png)
 
-- Score totals area: This section will be displayed throughout the game questioning process and serves to display the running total score throughout the game.
+## Question mark (help) button:
+- This button is displayed at the top right hand side of the page and will be a tool that the user could use throughout the game as a reminder about the game rules and 'how to play'.
 
-- The end-game message: This message will appear at the end of the 10 questions. The user will either be shown a message saying "Better Luck Next Time" or "Congratulations!" depending on how they score in the game.
+![Quiz Me question mark help button](assets/images/quiz-me-question-mark-help-button.png)
 
-### The Landing Page Image:
-- The landing includes a photograph with text overlay to allow the user to see exactly which location this site would be applicable to.
+![Quiz Me help pop-up page](assets/images/quiz-me-help-pop-up-page.png)
 
-![Happy Tails hero image with image](assets/images/Happy-Tails-Hero.png)
+## Score totals area:
+- This section will be displayed throughout the game questioning process and serves to display the running total score throughout the game.
 
-### Our Values Section:
-- The Our Values section would allow the user to see the benefits of using Happy Tails.
+- Correct answers will be shown in green and Incorrect answers will be shown in red.
 
-![Happy Tails our values section on website](assets/images/Happy%20Tails%20Our%20Services.png)
+![Quiz Me game score area](assets/images/quiz-me-game-score-section.png)
 
-### Our Services Section:
-- The Our Services section gives the user an overview of the services offered by Happy Tails. There is also a description below each service heading to give a more in depth explination of the service offered.
+## The end-game message:
+- This message will appear at the end of the 10 questions. The user will either be shown a message saying "Better Luck Next Time" or "Congratulations!" depending on how they score in the game.
 
-![Happy Tails our servics section on website](assets/images/Happy-Tails-our-services.png)
-
-### Summary section:
-- The Expert Dog Walking Service summary section serves to summarize why you should choose to use Happy Tails. It also explains a few different service options that may appeal to the user.
-
-![Happy Tails summary section on website](assets/images/Happy%20Tails%20Summary.png)
-
-### The Footer:
-
-- The footer section includes links to the relevant social media sites for Happy Tails. The links will open to a new tab to allow easy navigation for the user.
-- The footer is valuable to the user as it encourages them to keep connected via social media
-
-![Happy Tails website footer](assets/images/Happy%20Tails%20footer.png)
-
-### The Pricing Page:
-- The pricing page provides the user with a breakdown of the prices for all the services on ffer. Here the user would be able to see an exact price for the service they would be looking to use.
-- The price per walk or visit also becomes more cost effective if the user decides to move up to more days per week. This could also be used as an 'up-sell' feature.
-
-![Happy Tails pricing page on website](assets/images/Happy%20Tails%20Pricing%20Page%201.png)
-
-![Happy Tails pricing page on website](assets/images/Happy%20Tails%20Pricing%20Page%202.png)
-
-### Gallery:
-- The gallery will provide the user with supporting images to see what services we offer.
-- This section is valuable to the user as they will be able to easily identify the benefits to using our services.
-
-![Happy Tails gallery](assets/images/Happy%20Tails%20gallery.png)
-
-### Contact Us Page:
-- This page allows the user to fill out a contact form so that Happy Tails would be able to get in touch with the customer and answer any questions that they may have or get them to sign up to the service.
-
-![Happy Tails contact us page](assets/images/Happy-Tails-contact-us2.png)
-
-### Thank You for your message:
-- This page is shown once the user has filled out the contact form. 
-- This page serves to show the user that their message has been successfully sent and that Happy Tails will respond to their message as soon as possible.
-
-![Happy Tails thank you page](assets/images/Happy-Tails-thank-you-page.png)
+![Quiz Me end-game message](assets/images/quiz-me-end-game-message.png)
 
 ------
 
-### Features Left To Implement:
-- In the future, we could look at adding an automatic online booking system that would allow users to make bookings using the website.
+## Features Left To Implement:
+- In the future, I would like to implement a score board showing the top players within a time period (eg. top scoring players within the last 30 days). Each player would have their profile scored daily based on their totals within the score time frame.
+
+- Another feature that I'd like to implement going forward would be a way for the user to share their score. This would be via Social Media channels & email.
 
 -------
 

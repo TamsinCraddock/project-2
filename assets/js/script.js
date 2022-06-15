@@ -5,52 +5,51 @@ const questions = [
         options: ["White, blue, green, yellow and red","Black, green, blue, yellow and red","Black, green, blue, orange and red","Black, gold, blue, yellow and red"],
         answer: 1
     },
-    // { //Q2
-    //     question: 'Which country is brie cheese originally from?',
-    //     options: ["Switzerland","Portugal","Italy","France"],
-    //     answer: 3
-    // },
-    // { //Q3
-    //     question: 'How many time zones are there in Russia?',
-    //     options: ["11","12","13","14"],
-    //     answer: 0
-    // },
-    // { //Q4
-    //     question: "What is the name of Bridget Jones' baby in the third Bridget Jones film?",
-    //     options: ["Duke","Harry","William","Henry"],
-    //     answer: 2
-    // },
-    // { //Q5
-    //     question: 'How many elements are there in the periodic table?',
-    //     options: ["110","115","118","121"],
-    //     answer: 2
-    // },
-    // { //Q6
-    //     question: 'What does the AC button on a calculator stand for?',
-    //     options: ["All clear","Adjacent clear","Air conditioning","All clean"],
-    //     answer: 0
-    // },
-    // { //Q7
-    //     question: 'What's a baby rabbit called?',
-    //     options: ["A joey","A bunny","A kitten","A kit"],
-    //     answer: 3
-    // },
-    // { //Q8
-    //     question: 'What is the smallest country in the world?',
-    //     options: ["Monaco","Vatican City","Palau","San Marino"],
-    //     answer: 1
-    // },
-    // { //Q9
-    //     question: 'What is Scooby Doo's full name?',
-    //     options: ["Scumbert Doo","Scooby Doodle","Scoobert Doo","Scooby Doolittle"],
-    //     answer: 2
-    // }
-    ,
-    // { //Q10
-    //     question: 'Who invented the World Wide Web in 1990?',
-    //     options: ["Tim Berners-Lee","Vinton Cerf","Bill Gates","Elon Musk"],
-    //     answer: 0
-    // }
+     { //Q2
+        question: 'Which country is brie cheese originally from?',
+        options: ["Switzerland","Portugal","Italy","France"],
+         answer: 3
+     },
+     { //Q3
+         question: 'How many time zones are there in Russia?',
+         options: ["11","12","13","14"],
+         answer: 0
+     },
+    { //Q4
+        question: "What is the name of Bridget Jones' baby in the third Bridget Jones film?",
+        options: ["Duke","Harry","William","Henry"],
+        answer: 2
+    },
+    { //Q5
+        question: 'How many elements are there in the periodic table?',
+        options: ["110","115","118","121"],
+        answer: 2
+    },
+    { //Q6
+        question: 'What does the AC button on a calculator stand for?',
+        options: ["All clear","Adjacent clear","Air conditioning","All clean"],
+        answer: 0
+    },
+    { //Q7
+        question: "What's a baby rabbit called?",
+        options: ["A joey","A bunny","A kitten","A kit"],
+        answer: 3
+    },
+    { //Q8
+        question: 'What is the smallest country in the world?',
+        options: ["Monaco","Vatican City","Palau","San Marino"],
+        answer: 1
+    },
+    { //Q9
+        question: "What is Scooby Doo's full name?",
+        options: ["Scumbert Doo","Scooby Doodle","Scoobert Doo","Scooby Doolittle"],
+        answer: 2
+    },
+    { //Q10
+        question: 'Who invented the World Wide Web in 1990?',
+        options: ["Tim Berners-Lee","Vinton Cerf","Bill Gates","Elon Musk"],
+        answer: 0
+    }
 ];
 const gameState = {
     currentQuestion: 0,
@@ -192,8 +191,6 @@ function setEndGameMessage() {
     const percentage = Math.floor(gameState.currentScore / questions.length * 100);
     gameState.questionOutput.textContent = `${gameState.currentScore} / ${questions.length} correct - ${percentage}%`;
     gameState.questionProgress.textContent = percentage < 70 ? "Better Luck Next Time!" : "Well Done";
-    const endImage = document.createElement{"img"}
-    //gameState.questionProgress.parentElement.classList.add("end-game");
     for(let i = 0; i < gameState.options.length; i++) {
         gameState.options[i].parentElement.style.display = "none";
     }
