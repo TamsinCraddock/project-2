@@ -1,4 +1,4 @@
-const answers = ["a","b","c","d"]
+const answers = ["a","b","c","d"];
 const questions = [
     { //Q1
         question: 'Which five colours make up the Olympic rings?',
@@ -63,9 +63,10 @@ const gameState = {
         incorrect: null
     },
     options:[]
-}
+};
 
 document.addEventListener("DOMContentLoaded", function(){
+    "use strict";
     const buttons = document.getElementsByClassName("answer-button");
     gameState.options = document.getElementsByClassName("option");
     gameState.questionOutput = document.getElementById("question");
@@ -89,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
     closeHelpButton.addEventListener("click", function() {
         helpArea.style.display = "none";
-        document.body.style.overflow = "inherit"
+        document.body.style.overflow = "inherit";
     });
 
     // Next button
@@ -125,21 +126,22 @@ document.addEventListener("DOMContentLoaded", function(){
                 statusElement.appendChild(createAnswerStatus(true));
             } else {
                 incrementWrongAnswer();
-                statusElement.appendChild(createAnswerStatus(false))
+                statusElement.appendChild(createAnswerStatus(false));
             }
             toggleButtons(buttons, true);
             nextButton.disabled = false;
             if(gameState.currentQuestion >= questions.length - 1) {
                 nextButton.textContent = "Finish";
             }
-        })
+        });
     }
     displayQuestion();
-})
+});
 
 // Question status - correct or incorrect?
 
 function createAnswerStatus(isCorrect) {
+    "use strict";
     const span = document.createElement("span");
     span.textContent = isCorrect ? " Correct" : " Incorrect";
     const icon = document.createElement("i");
@@ -150,33 +152,40 @@ function createAnswerStatus(isCorrect) {
 }
 
 function emptyNodes(nodes) {
+    "use strict";
     for(let node of nodes) {
         node.innerHTML = "";
     }
 }
 
 function toggleButtons(buttons, isDisabled) {
+    "use strict";
     for (let button of buttons) {
+        "use strict";
         button.disabled = isDisabled;
     }
 }
 
 function checkAnswer(answer) {
+    "use strict";
     const currentQuestion = questions[gameState.currentQuestion];
     return answers.indexOf(answer) === currentQuestion.answer;
 }
 
 function incrementScore() {
+    "use strict";
     gameState.scoreElements.score.textContent = ++gameState.currentScore;
 }
 
 function incrementWrongAnswer() {
+    "use strict";
     gameState.scoreElements.incorrect.textContent = ++gameState.wrongAnswers;
 }
 
 // Question count display
 
 function displayQuestion() {
+    "use strict";
     const currentQuestion = questions[gameState.currentQuestion];
     gameState.questionOutput.textContent = currentQuestion.question;
     gameState.questionProgress.textContent = `Question ${gameState.currentQuestion+1} of ${questions.length}`;
@@ -188,6 +197,7 @@ function displayQuestion() {
 // End game message
 
 function setEndGameMessage() {
+    "use strict";
     const percentage = Math.floor(gameState.currentScore / questions.length * 100);
     gameState.questionOutput.textContent = `${gameState.currentScore} / ${questions.length} correct - ${percentage}%`;
     gameState.questionProgress.textContent = percentage < 70 ? "Better Luck Next Time!" : "Well Done";

@@ -45,6 +45,15 @@ The live link can be found here: [Quiz Me](https://tamsincraddock.github.io/proj
 
 - Another feature that I'd like to implement going forward would be a way for the user to share their score. This would be via Social Media channels & email.
 
+- A feature that I very much wanted to add to the website is an image that would display depending on the users' outcome.
+    - For a game with the "Better Luck Next Time!" message, the below image would display:
+
+![Quiz Me better luck next time image](assets/images/pexels-gratisography-2882.jpg)
+
+- For a game with the "Well done!" message, the below image would display:
+
+![Quiz Me better luck next time image](assets/images/pexels-pixabay-260024.jpg)
+
 -------
 
 ## Testing:
@@ -62,29 +71,53 @@ The live link can be found here: [Quiz Me](https://tamsincraddock.github.io/proj
 
 ## Validator Testing:
 ### HTML:
-    Upon my initial testing using the W3C validator, I found an error where I forgot to add an 'alt' attribute to one of my images added to the website.
+Upon my initial testing using the W3C validator, I found an error where I forgot to add an 'alt' attribute to one of my images added to the website.
 
 ![Quiz Me W3C Validatior initial check alt error](assets/images/quiz-me-w3c-validator-initial-check.png)
 
-    I corrected this issue and ran the validator check once more. The report showed no more issues.
+I corrected this issue and ran the validator check once more. The report showed no more issues.
 
 ![Quiz Me W3C Validatior no issues](assets/images/quiz-me-w3c-validator-no-issues.png)
 
 
 ### CSS:
-    No errors were returned when passing through the official W3C CSS Validator (Jigsaw)
+No errors were returned when passing through the official W3C CSS Validator (Jigsaw)
 
- ![Quiz Me Jigsaw Validatior no issues](assets/images/quiz-me-jigsaw-validator-no-issues.png)
+![Quiz Me Jigsaw Validatior no issues](assets/images/quiz-me-jigsaw-validator-no-issues.png)
 
-    ------
 
-    ## Deployment:
+ ### Javascript:
 
-    This site was deployed to GitHub Pages. 
+ Initially when I ran the Javascrit through the jshint validator, it returned 9 warnings. 
 
-    The live link can be found here: [Hapy Tails](https://tamsincraddock.github.io/project-1/)
+ ![Quiz Me jshint Validatior initial check with errors](assets/images/quiz-me-jshint-javascript-validator-initial-with-errors.png)
 
-    -----
 
-    ## Images:
-    - The images throughout the website were taken from [Pexels](https://www.pexels.com/) (Royalty Free Images).
+ Once I had worked through the issues, I ran the validator check again and it has still returned two errors that I unfortunately was not able to solve.
+
+![Quiz Me jshint Validatior final check with two errors](assets/images/quiz-me-jshint-javascript-validator-final-with-errors.png)
+
+ ------
+
+ ## Deployment:
+
+This site was deployed to GitHub Pages. 
+
+The live link can be found here: [Quiz Me](https://tamsincraddock.github.io/project-2/)
+
+
+
+-----
+
+## Images:
+- The images throughout the website were taken from [Pexels](https://www.pexels.com/) (Royalty Free Images)
+
+-----
+
+## Refrences & credits:
+- Questions for general knowledge game: https://www.cosmopolitan.com/uk/worklife/a32388181/best-general-knowledge-quiz-questions/
+
+- Research for CSS/ Html & Javascript code:
+    - https://www.w3schools.com/
+    - https://stackoverflow.com
+    - https://learn.codeinstitute.net/ci_program/diplomainfullstacksoftwarecommoncurriculum (Code Institute course notes and examples)
