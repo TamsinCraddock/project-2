@@ -75,6 +75,7 @@ document.addEventListener("DOMContentLoaded", function(){
     // Next button
 
     nextButton.addEventListener("click", function() {
+        nextButton.disabled = true;
         
         if(!gameState.started) {
             questionArea.style.display = "flex";
@@ -92,7 +93,6 @@ document.addEventListener("DOMContentLoaded", function(){
         gameState.currentQuestion++;
         displayQuestion();
         toggleButtons(buttons, false);
-        nextButton.disabled = true;
         emptyNodes(statuses);
     });
 
@@ -124,7 +124,7 @@ function createAnswerStatus(isCorrect) {
     span.textContent = isCorrect ? " Correct" : " Incorrect";
     const icon = document.createElement("i");
     span.prepend(icon);
-    span.classList.add(isCorrect ? "green" : "red");
+    span.classList.add("active", isCorrect ? "green" : "red");
     icon.classList.add("fa", isCorrect ? "fa-check" : "fa-times");
     return span;
 }

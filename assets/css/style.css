@@ -266,6 +266,25 @@ header section {
     margin: 40px;
 }
 
+/* --------- Answer status message */
+
+.status .active {
+    display: block;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.status .active.red {
+    background-color: rgb(243, 172, 172);
+    border: 0.3px solid red;
+}
+
+.status .active.green {
+    background-color: rgb(180, 247, 174);
+    border: 0.3px solid green;
+}
+
+
 /* --------- Media queries */
 
 @media (max-width: 414px) {
