@@ -9,12 +9,18 @@ The live link can be found here: [Quiz Me](https://tamsincraddock.github.io/proj
 ## Existing Features:
 ---
 
-### Navigation Bar:
-- Featured on all four pages, the full responsive navigation bar includes links to the Logo, Home page, Pricing, Gallery and Contact Us pages and is identical in each page to allow for easy navigation
+### Welcome pop-up page:
+-  This is a landing page to welcome the user to the website. The welcome page will also serve the purpose of giving the user an overview of how to use the application.
 
-- This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button.
+![Quiz Me welcome page](assets/images/quiz-me-welcome-page.png)
 
-![Happy Tails navigation bar](assets/images/Happy%20Tails%20Navigation%20Bar.png)
+- Question game play area: This is the section of the game. Each question will be displayed here one at a time and the user will need to select an answer (either option A, B, C or D) before they are able to click the 'next' button to move on to the next question.
+
+- Question mark (help) button: This button is displayed at the top right hand side of the page and will be a tool that the user could use throughout the game as a reminder about the game rules and 'how to play'.
+
+- Score totals area: This section will be displayed throughout the game questioning process and serves to display the running total score throughout the game.
+
+- The end-game message: This message will appear at the end of the 10 questions. The user will either be shown a message saying "Better Luck Next Time" or "Congratulations!" depending on how they score in the game.
 
 ### The Landing Page Image:
 - The landing includes a photograph with text overlay to allow the user to see exactly which location this site would be applicable to.
