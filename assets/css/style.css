@@ -23,6 +23,8 @@ body {
     font-size: 2.5rem;
 }
 
+/* --------- Logo */
+
 .logo {
     height: 5rem;
     padding: 2px;
@@ -45,7 +47,7 @@ body {
 
 .option-holder {
     display: flex;
-    flex-direction: row-reverse;
+    flex-flow: row-reverse wrap;
     justify-content: flex-end;
     padding-top: 2rem;
 }
@@ -137,6 +139,8 @@ body {
     font-size: 3.2rem;
     margin: 0 30px;
     transition: all 0.5s;
+    flex-shrink: 0;
+    flex-grow: 0;
 }
 
 .btn--big::after{
@@ -286,76 +290,49 @@ header section {
 
 /* --------- Media queries */
 
-@media (max-width: 414px) {
-    .controls-area {
-        width: 100%;
+/* Responsive layout - when the screen is less than 320px wide - small */
+
+@media only screen and (max-width: 320px) {
+    .logo {
+        height: 4rem;
+        padding: 0px;
     }
 
-    .btn--big {
-        margin: 0 10px;
-        padding: 5px;
-        border: 5px solid;
+    /* .btn--big {
         width: 50px;
         height: 50px;
-        font-size: 1.5rem;
+        font-size: 2rem;
+    } */
+
+    #welcome-area img {
+        display: none;
     }
 
-    .btn--big::after {
-        font-size: 0.6rem;
-        left: -0.7rem;
+    #welcome-area {
+        font-size: 12px;
     }
 
-    #question-area {
-        padding: 10% 0;
-        width: 100%;
+    #welcome-area ol {
+        text-align: left;
+        line-height: 25px;
+        margin: 10px;
     }
 
-    #question-area span {
-        padding: 0;
+    .option {
+        font-size: 1rem;
+        padding-top: 0.4rem;
     }
 
-    .answer-message {
-        display: block;
-    }
-
-    #answer-box {
-        display: block;
-        margin: 0 auto;
-    }
-    .btn--gray {
-        margin-top: 0;
-    }
-
-    .score-area {
-        width: 100%;
-    }
-
-    .scores {
-        margin: 0.5em auto;
-        display: block;
-        padding: 5px;
-    }
-
-    .heading {
-        font-size: 2rem; 
-    }
-}
-
-@media (max-width: 320px) {
-    .game-area {
-        height: 70vh;
-    }
-
-    .controls-area {
-        width: 75%;
-        margin: 10px auto;
-    }
-
-    .btn--big {
-        margin: 10px 10px;
-    }
-    #question-area {
+    #question-area{
+        font-size: 1rem;
         padding: 10px 0;
     }
 
+    .status .active {
+        font-size: 0.8rem;
+    }
+
+    .option-holder p {
+        min-width: 280px;
+      }      
 }
