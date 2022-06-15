@@ -45,10 +45,6 @@ const gameState = {
     options:[]
 }
 
-
-// Wait for the DOM to finish loading before running the game
-// Get the button elements and add event lsteners to them
-
 document.addEventListener("DOMContentLoaded", function(){
     const buttons = document.getElementsByClassName("answer-button");
     gameState.options = document.getElementsByClassName("option");
@@ -64,6 +60,8 @@ document.addEventListener("DOMContentLoaded", function(){
     const welcomeArea = document.getElementById("welcome-area");
     const questionArea = document.getElementById("question-area");
 
+    // Help pop up
+
     openHelpButton.addEventListener("click", function () {
         helpArea.style.display = "block";
         document.body.style.overflow = "hidden";
@@ -73,6 +71,8 @@ document.addEventListener("DOMContentLoaded", function(){
         helpArea.style.display = "none";
         document.body.style.overflow = "inherit"
     });
+
+    // Next button
 
     nextButton.addEventListener("click", function() {
         
@@ -116,6 +116,8 @@ document.addEventListener("DOMContentLoaded", function(){
     }
     displayQuestion();
 })
+
+// Question status - correct or incorrect?
 
 function createAnswerStatus(isCorrect) {
     const span = document.createElement("span");
