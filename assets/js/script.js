@@ -152,10 +152,12 @@ function incrementWrongAnswer() {
     gameState.scoreElements.incorrect.textContent = ++gameState.wrongAnswers;
 }
 
+// Question count display
+
 function displayQuestion() {
     const currentQuestion = questions[gameState.currentQuestion];
     gameState.questionOutput.textContent = currentQuestion.question;
-    gameState.questionProgress.textContent = `${gameState.currentQuestion+1} of ${questions.length}`;
+    gameState.questionProgress.textContent = `Question ${gameState.currentQuestion+1} of ${questions.length}`;
     for(let i = 0; i < gameState.options.length; i++) {
         gameState.options[i].textContent = currentQuestion.options[i];
     }

@@ -212,6 +212,8 @@ body {
     background-color: #0d1013;
 }
 
+/* --------- Help area pop up */
+
 #help-area {
     display: none;
     position: absolute;
@@ -220,6 +222,12 @@ body {
     width: 100%;
     height: 100%;
     background-color: white;
+}
+
+#help-area ol {
+    text-align: left;
+    line-height: 30px;
+    margin: 60px;
 }
 
 #open-help {
