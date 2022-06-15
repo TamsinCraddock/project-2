@@ -24,9 +24,8 @@ body {
 }
 
 .logo {
-    height: 40px;
-    padding-right: 5px;
-    padding-top: 1.5rem;
+    height: 5rem;
+    padding: 2px;
 }
 
 /* --------- Game layout */
@@ -34,9 +33,10 @@ body {
 .game-area {
     background-color: #334d5c;
     box-sizing: border-box;
+}
+
+.game-area, header {
     width: 85%;
-    /* height: 65vh; */
-    /* max-height: 450px; */
     max-width: 830px;
     margin-left: auto;
     margin-right: auto;
@@ -231,9 +231,11 @@ body {
 }
 
 #open-help {
-    padding: 2rem;
+    padding: 1.5rem;
     font-size: 1.5rem;
     cursor: pointer;
+    text-align: right;
+    width: 25%;
 }
 
 #close-help {
@@ -245,6 +247,11 @@ header {
     flex-flow: row;
     justify-content: center;
     column-gap: 2rem;
+}
+
+header section {
+    width: 75%;
+    text-align: left;
 }
 
 /* --------- Welcome pop up */
