@@ -4,7 +4,7 @@ Quiz Me is a general knowledge quiz website designed for users to put their know
 
 The live link can be found here: [Quiz Me](https://tamsincraddock.github.io/project-2/)
 
-
+![Quiz Me website layout media queries](assets/images/quiz-me-website-layout-media-queries.png)
 
 ## Existing Features:
 ---
@@ -60,18 +60,21 @@ The live link can be found here: [Quiz Me](https://tamsincraddock.github.io/proj
 - I confirmed that the welcome pop up page, logo, help pop up page, game area and end-game page are all readable and easy to understand.
 
 
-### Validator Testing:
-- HTML:
+## Validator Testing:
+### HTML:
     Upon my initial testing using the W3C validator, I found an error where I forgot to add an 'alt' attribute to one of my images added to the website.
 
 ![Quiz Me W3C Validatior initial check alt error](assets/images/quiz-me-w3c-validator-initial-check.png)
 
     I corrected this issue and ran the validator check once more. The report showed no more issues.
 
-    
+![Quiz Me W3C Validatior no issues](assets/images/quiz-me-w3c-validator-no-issues.png)
 
-- CSS:
+
+### CSS:
     No errors were returned when passing through the official W3C CSS Validator (Jigsaw)
+
+ ![Quiz Me Jigsaw Validatior no issues](assets/images/quiz-me-jigsaw-validator-no-issues.png)
 
     ------
 
