@@ -49,19 +49,26 @@ The live link can be found here: [Quiz Me](https://tamsincraddock.github.io/proj
 
 ## Testing:
 
-- Media queries have been added for small and medium screen sizes. This means that the website should be easily readable and functional across a wide range of devices. The overall design was completed on a desktop size screen (large), therefore the website design and media queries should cover all standard screen size widths and orientations.
+- Media queries have been added for small screen sizes. This means that the website should be easily readable and functional across a wide range of devices. The overall design was completed on a desktop size screen (large), therefore the website design and media queries should cover all standard screen size widths and orientations.
+
+- I checked to see if media queries are required for medium size screens. However all functionality and design looked to be working and displayed correctly n medium size screens. Therefore no media queries have been added for these screen sizes.
 
 - I tested that this page works in different browsers: Chrome, Firefox, Saari.
 
 - I confirmed that this project is responsive, looks good and functions on all standard screen sizes using the devtools device toolbar.
 
-- I confirmed that the navigation, header, pricing page, gallery and contact us page are all readable and easy to understand.
+- I confirmed that the welcome pop up page, logo, help pop up page, game area and end-game page are all readable and easy to understand.
 
-- I have confirmed that the form works. Required fields have been added to essential information needed to contact the customer. A valid email address only works in the email address field. The submit button works and takes the user to a seperate thank you page.
 
 ### Validator Testing:
 - HTML:
-    No errors were returned when passing through the official W3C validator
+    Upon my initial testing using the W3C validator, I found an error where I forgot to add an 'alt' attribute to one of my images added to the website.
+
+![Quiz Me W3C Validatior initial check alt error](assets/images/quiz-me-w3c-validator-initial-check.png)
+
+    I corrected this issue and ran the validator check once more. The report showed no more issues.
+
+    
 
 - CSS:
     No errors were returned when passing through the official W3C CSS Validator (Jigsaw)
