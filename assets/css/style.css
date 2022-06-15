@@ -239,8 +239,16 @@ header {
     column-gap: 2rem;
 }
 
+/* --------- Welcome pop up */
+
 #welcome-area {
     color: white;
+}
+
+#welcome-area ol {
+    text-align: left;
+    line-height: 30px;
+    margin: 40px;
 }
 
 /* --------- Media queries */
